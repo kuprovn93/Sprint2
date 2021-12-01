@@ -185,11 +185,7 @@ def migrate_db():
     db.session.commit()
 
     return "DB migration is done"
-
-@app.route('/home')
-def home():
-    return render_template('home.html')
-
+    
 # app main
 if __name__ == '__main__':
     app.run(
